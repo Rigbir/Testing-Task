@@ -1,4 +1,4 @@
 #Arduino Task
 
-![App Interface](./appImage)
+![App Interface](./appImage.png)
 
