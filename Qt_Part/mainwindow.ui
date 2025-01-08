@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>784</width>
+    <height>508</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>784</width>
+    <height>508</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #d3d7da;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>701</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>110</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #728495;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#544169;&quot;&gt;Glow Modes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::TextFormat::AutoText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Preferred</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #728495;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::WinPanel</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#544169;&quot;&gt;Blink Frequency&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="comboGlow">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+    font: bold 12px;
+    color: white;
+    background-color: #2B923C; 
+    border: 2px solid #2E7D32;
+    border-radius: 5px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #388E3C;
+    color: white;
+    selection-background-color: #66BB6A;
+    selection-color: black;
+    border-radius: 5px;
+}</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Off</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Constant</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Variable</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="OffButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>440</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #924949;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+    font-size: 26px;
+    height: 48px;
+    padding: 0 25px;
+    text-align: center;
+    position: relative;
+    outline: none;
+}
+
+QPushButton:hover {
+    background-color: #8D2929; 
+    
+}
+
+QPushButton:pressed {
+    background-color: #8D2929; 
+}
+
+QPushButton::before {
+    background-color: #111;
+    border-radius: 8px;
+    content: &quot;&quot;;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    QPushButton {
+        padding: 0 40px;
+    }
+}
+</string>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OnButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>440</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #2B923C;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: white;
+    font-size: 26px;
+    height: 48px;
+    padding: 0 25px;
+    text-align: center;
+    position: relative;
+    outline: none;
+}
+
+QPushButton:hover {
+    background-color: #217930; 
+    
+}
+
+QPushButton:pressed {
+    background-color: #217930; 
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>280</y>
+      <width>235</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #728495;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::WinPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#544169;&quot;&gt;Diods&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>761</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QCheckBox" name="checkFirst">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>First</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkSecond">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>Second</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkThird">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>Third</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkFourth">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>Fourth</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkFifth">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>Fifth</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkAll">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+	font-size: 25px;
+}
+
+QCheckBox::indicator {
+	width:30px;
+	height: 30px;
+	background-color: #f5f5dc;
+	border-radius: 7px;
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/images/galochka.png) 0 0 0 0 stretch stretch;
+}</string>
+       </property>
+       <property name="text">
+        <string>All</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="comboBlink">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>70</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+    width: 50px;
+    height: 30px;
+    font: bold 12px;
+    color: white;
+    background-color: #2B923C; 
+    border: 2px solid #2E7D32;
+    border-radius: 5px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #388E3C; 
+    color: white;
+    selection-background-color: #66BB6A;
+    selection-color: black;
+    border-radius: 5px; 
+}</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string>Off</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fast</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Average</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Slow</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSlider" name="brightnessScroll">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>160</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider {
+    background: transparent;
+    min-height: 60px; 
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #1e90ff;
+    background: #3b3b3b;
+    height: 15px; 
+    border-radius: 15px;
+    margin: 0px; 
+}
+
+QSlider::handle:horizontal {
+    width: 30px;
+    height: 30px;
+    margin: -10px 0; 
+    border: 2px solid #1e90ff;
+    border-radius: 15px;
+    background: #2e2e2e;
+}
+
+QSlider::add-page:horizontal {
+    background: #4c4c4c;
+    height: 15px;
+    border-radius: 10px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #1e90ff;
+    height: 15px; 
+    border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

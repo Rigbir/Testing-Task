@@ -1,0 +1,6 @@
+<RCC>
+    <qresource>
+        <file>images/galochka.png</file>
+        <file>images/hand.png</file>
+    </qresource>
+</RCC>
